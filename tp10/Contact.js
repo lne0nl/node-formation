@@ -9,7 +9,6 @@ class Contact {
     toString() {
         let lastName = this.lastName.toUpperCase();
         let firstName = this.firstName;
-        debugger;
 
         const { colors } = getCommandOptions();
 
@@ -17,6 +16,7 @@ class Contact {
             lastName = chalk.blue(lastName);
             firstName = chalk.red(firstName);
         }
+
         return `${lastName} ${firstName}`;
     }
 }
